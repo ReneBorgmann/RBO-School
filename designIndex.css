@@ -1,4 +1,4 @@
-.body {
+body {
   border: 1px solid black;
 }
 
@@ -12,7 +12,17 @@
   justify-items: center;
   align-items: center;
   grid-template-areas:
-    ". . ."
-    ". . ."
-    ". . .";
+    "header header header"
+    "body body body"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+.body { 
+  grid-area: body;
+}
+.footer {
+  grid-area: footer;
 }
