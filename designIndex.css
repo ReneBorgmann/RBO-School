@@ -1,0 +1,32 @@
+div {
+  border: 1px solid black;
+}
+
+.parent { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 80px;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "header header header"
+    "body body body"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  height: 100%;
+}
+.body { 
+  grid-area: body;
+  height: 100%;
+}
+.footer {
+  grid-area: footer;
+  height: 100%;
+}
